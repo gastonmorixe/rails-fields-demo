@@ -2,8 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+
 # Use main development branch of Rails
-gem "rails", github: "rails/rails", branch: "main"
+gem "rails" #, github: "rails/rails", branch: "main"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -16,6 +17,17 @@ gem "puma", ">= 5.0"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
+
+gem 'graphql'
+gem "graphiql-rails", group: :development
+
+gem "formtastic", "~> 4.0"
+gem "country_select", "~> 8.0"
+
+gem "awesome_print", require: "ap"
+
+# gem 'rails-fields', :path => '../rails_fields_gem'
+gem 'rails-fields'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

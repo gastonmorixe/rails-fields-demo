@@ -1,0 +1,58 @@
+<h2><%= model.class.name&.humanize %> <%= model.id %></h2>
+<div id="<%= dom_id model %>">
+  <table>
+    <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% model.class.declared_fields.each do |field| %>
+      <tr>
+        <td><strong><%= field.name.humanize %>:</strong></td>
+        <td><%= model.send(field.name) %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2">Associations</td>
+    </tr>
+    <% model.class.reflections.each do |reflection_name, reflection| %>
+      <tr>
+        <td><strong><%= reflection.name.to_s.humanize %>:</strong></td>
+        <td><%=
+          unless (associated_model = model.send(reflection.name)).nil?
+            generated_link = ->(am) {
+              display_text = if am.respond_to?("name")
+                               am.name
+                             elsif am.respond_to?("first_name")
+                               am.first_name
+                             elsif am.respond_to?("id")
+                               am.id
+                             else
+                               am
+                             end
+
+              display_text = "#{am.class.name} #{display_text}"
+
+              # Generate the link to the show action
+              link_path = url_for(am) rescue nil
+
+              if link_path
+                link_to(display_text, link_path)
+              else
+                display_text
+              end
+            }
+            if associated_model.is_a?(Enumerable)
+              associated_model.map { |am| generated_link.call(am) }.join("<br>").html_safe
+            else
+              generated_link.call(associated_model)
+            end
+          end
+        %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
