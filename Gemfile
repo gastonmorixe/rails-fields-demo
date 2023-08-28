@@ -26,8 +26,8 @@ gem "country_select", "~> 8.0"
 
 gem "awesome_print", require: "ap"
 
-# gem 'rails-fields', :path => '../rails_fields_gem'
-gem 'rails-fields', '~> 0.3.1'
+gem 'rails-fields', :path => '../rails_fields_gem'
+#gem 'rails-fields', '~> 0.3.1'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

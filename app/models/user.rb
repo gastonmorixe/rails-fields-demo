@@ -8,6 +8,7 @@ class User < ApplicationRecord
   field :country, :string
   field :phone, :string
   field :age, :integer
+  field :is_admin, :boolean
 
   has_many :todos
 

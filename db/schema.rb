@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_27_064257) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_28_055404) do
   create_table "todos", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "content"
-    t.boolean "completed"
+    t.datetime "completed", precision: nil
     t.integer "user_id"
     t.index ["user_id"], name: "index_todos_on_user_id"
   end
@@ -27,6 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_27_064257) do
     t.string "country"
     t.string "phone"
     t.integer "age"
+    t.boolean "is_admin"
   end
 
   add_foreign_key "todos", "users"

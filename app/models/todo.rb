@@ -4,7 +4,7 @@ class Todo < ApplicationRecord
   field :updated_at, :datetime
 
   field :content, :text
-  field :completed, :boolean
+  field :completed, :datetime
 
   belongs_to :user
 end
