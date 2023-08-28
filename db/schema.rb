@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_27_050907) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_27_064257) do
   create_table "todos", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -25,6 +25,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_27_050907) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "country"
+    t.string "phone"
+    t.integer "age"
   end
 
   add_foreign_key "todos", "users"

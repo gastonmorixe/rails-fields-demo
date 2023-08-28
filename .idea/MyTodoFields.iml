@@ -28,6 +28,43 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="rails-fields (v0.3.0) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/lib" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.git" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/docs" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.idea" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/assets" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.github" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.yardoc" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.rubocop" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/lib" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.git" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/docs" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.idea" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/assets" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.github" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.yardoc" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.rubocop" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.git" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/docs" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.idea" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/assets" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.github" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.yardoc" />
+          <root url="file://$MODULE_DIR$/../rails_fields_gem/.rubocop" />
+        </excluded>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="actioncable (v7.0.7.2, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v7.0.7.2, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v7.0.7.2, rbenv: 3.2.2) [gem]" level="application" />
@@ -76,7 +113,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.1.0, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v7.0.7.2, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, rbenv: 3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails-fields (v0.1.0, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.6.0, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.7.2, rbenv: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, rbenv: 3.2.2) [gem]" level="application" />
